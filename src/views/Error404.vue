@@ -28,7 +28,7 @@
 }
 
 .logo {
-  font-family: 'Darker Grotesque', cursive;
+  font-family: 'GlitterySnowfall', cursive;
   font-size: 2em;
   /*margin-bottom: 150px;*/
 }

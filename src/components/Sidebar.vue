@@ -25,33 +25,31 @@
     
     <hr />
 
-    <div class="d-grid gap-2">
-      <router-link class="btn btn-secondary text-center" to="/profile">
-        <i class="bi bi-person"></i> Profile
-      </router-link>
+    <router-link class="btn btn-sidebar text-start" to="/profile">
+      <i class="bi bi-person"></i> Profile
+    </router-link>
 
-      <router-link class="btn btn-secondary text-center" to="/">
-        <i class="bi bi-cart4"></i> Buy domain
-      </router-link>
+    <router-link class="btn btn-sidebar text-start" to="/">
+      <i class="bi bi-cart4"></i> Buy domain
+    </router-link>
 
-      <router-link class="btn btn-secondary text-center" to="/search-domain">
-        <i class="bi bi-search"></i> Search domain
-      </router-link>
+    <router-link class="btn btn-sidebar text-start" to="/search-domain">
+      <i class="bi bi-search"></i> Search domain
+    </router-link>
 
-      <router-link class="btn btn-secondary text-center" to="/profile/send-tokens">
-        <i class="bi bi-send"></i> Send tokens
-      </router-link>
+    <router-link class="btn btn-sidebar text-start" to="/profile/send-tokens">
+      <i class="bi bi-send"></i> Send tokens
+    </router-link>
 
-      <!--
-      <router-link class="btn btn-secondary text-start" to="/browser">
-        <i class="bi bi-window-plus"></i> Browser extension
-      </router-link>
+    <router-link class="btn btn-sidebar text-start" to="/allowance">
+      <i class="bi bi-currency-dollar"></i> ${{getPaymentTokenName}} allowance
+    </router-link> 
 
-      <router-link class="btn btn-secondary text-start" to="/allowance">
-        <i class="bi bi-currency-dollar"></i> ${{getPaymentTokenName}} allowance
-      </router-link> 
-      -->
-    </div>
+    <!--
+    <router-link class="btn btn-sidebar text-start" to="/browser">
+      <i class="bi bi-window-plus"></i> Browser extension
+    </router-link>
+    -->
 
   </div>
 </template>
