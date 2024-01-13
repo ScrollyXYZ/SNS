@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'GlitterySnowfall';
+  src: url('/assets/font/GlitterySnowfall.ttf')  format('truetype');
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #E7ECFD;
+}
+
+body {
+  font-family: 'GlitterySnowfall', sans-serif;
+  background: linear-gradient(30deg, #155BFC 30%, #155BFC 100%);
+  color: #fff;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:focus, .btn-primary:disabled {
+  background: transparent;
+  box-shadow: none;
+  color: #fff;
+  border: 2px solid white;
+}
+
+.btn-primary:hover {
+  color: #155BFC;
+  background: #fff;
+  border: 2px solid #fff;
+}
+
+.btn-secondary, .btn-secondary:active, .btn-secondary:focus, .btn-secondary:disabled {
+  background: white;
+  border-color: black;
+  box-shadow: none;
+  color: black;
+  border: 2px solid black;
+}
+
+.btn-secondary:hover {
+  color: black;
+  border-color: #ffffff;
+  background: #ffffff;
+  border: 2px solid black;
+}
+
+.card-img-wallet:hover {
+  opacity: 0.5;
+}
+
+.card-img-wallet:active {
+  transform: scale(0.8);
+}
+
+.container {
+  background: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+div {
+  font-size: 20px;
+}
+
+.dropdown-item {
+  cursor: pointer;
+}
+
+hr {
+  background-color: #fff;
+}
+
+.img-thumbnail {
+  background-color: transparent;
+}
+
+.modal-content {
+  color: black;
+}
+
+.navbar-brand {
+  font-family: 'GlitterySnowfall', sans-serif;
+  font-size: 2rem;
+}
+
+.navbar-dark .navbar-brand {
+  /*color: #fff;*/
+}
+
+.navbar-dark {
+  border-radius: 0px 0px 10px 10px;
+  /*background: linear-gradient(30deg, #C71585 30%, #c111c3 100%);*/
+  background: transparent;
+  padding: 20px;
+  
+}
+.navbar-img {
+  margin-right: 5px;
+}
+
+p {
+  font-size: 24px;
+}
+
+.punchline-domain, code {
+  color: #b35160;
+}
+
+.span-link:hover {
+  color: #b35160;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.span-link {
+  text-decoration: underline;
+}
+
+.table > tbody > tr > td {
+  color: white;
+  background-color: transparent;
+}
+
+.Vue-Toastification__toast--info {
+  background-color: #405374;
+}
+
+.Vue-Toastification__toast--success {
+  background-color: #00C9D1;
+}
+
+.Vue-Toastification__toast--error {
+  background-color: #e26670;
+}
+
+.wallet-img-wrapper {
+  border-width: 2px;
+  border-color: #ffffff;
+  border-style: solid;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-menu-btn {
+    margin-bottom: 5px;
+  }
+
+  .navbar-other-item {
+    margin-top: 10px;
+  }
+
+  .navbar-menu-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #sidebar-container {
+    margin-bottom: 15px;
+  }
+}
