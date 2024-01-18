@@ -27,6 +27,12 @@
             </router-link>
             -->
 
+            <a 
+              class="btn btn-primary me-3 navbar-menu-btn" 
+              href="https://scrolly.xyz" 
+              target="_blank"
+            >Main site</a>
+
             <div v-if="isActivated" class="btn-group me-3 navbar-menu-btn">
               <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 {{getNetworkName}}
