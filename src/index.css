@@ -3,25 +3,58 @@
   src: url('/assets/font/GlitterySnowfall.ttf')  format('truetype');
 }
 
+.cloud-container {
+  width: 100vw;
+  max-width: 100%;
+  padding: 0;
+  background-color: #007ced;
+  background: linear-gradient(to bottom, #007ced 1%, #cce7ff 100%);
+}
+
+@keyframes wind {
+  0% {
+    background-position: 0 200px, 0 300px, 100px 250px;
+  }
+  100% {
+    background-position: 1000px 200px, 1200px 300px, 1100px 250px;
+  }
+}
+
+#cloud-intro {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: url(/assets/clouds/clouds1000.png);
+  background: url(/assets/clouds/clouds1000.png) 0 200px, url(/assets/clouds/clouds1200_1.png) 0 300px, url(/assets/clouds/clouds1000_blur3.png) 100px 250px;
+  animation: wind 20s linear infinite;
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block; 
+}
+
 a {
-  color: #fff;
+  color: #000;
 }
 
 a:hover {
-  color: #E7ECFD;
+  color: #1d1c1c;
 }
 
 body {
   font-family: 'GlitterySnowfall', sans-serif;
+  /*
   background: linear-gradient(30deg, #155BFC 30%, #155BFC 100%);
-  color: #fff;
+  */
+  color: #000;
 }
 
 .btn-primary, .btn-primary:active, .btn-primary:focus, .btn-primary:disabled {
   background: transparent;
   box-shadow: none;
-  color: #fff;
-  border: 2px solid white;
+  color: #000;
+  border: 2px solid black;
 }
 
 .btn-primary:hover {
@@ -73,7 +106,7 @@ div {
 }
 
 hr {
-  background-color: #fff;
+  background-color: #000;
 }
 
 .img-thumbnail {
@@ -86,7 +119,7 @@ hr {
 
 .navbar-brand {
   font-family: 'GlitterySnowfall', sans-serif;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 .navbar-dark .navbar-brand {
@@ -113,7 +146,7 @@ p {
 }
 
 .span-link:hover {
-  color: #cfcacb;
+  color: #161414;
   text-decoration: none;
   cursor: pointer;
 }
@@ -123,7 +156,7 @@ p {
 }
 
 .table > tbody > tr > td {
-  color: white;
+  color: black;
   background-color: transparent;
 }
 

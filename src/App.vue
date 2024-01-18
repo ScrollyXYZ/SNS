@@ -1,7 +1,10 @@
 <template>
+<div class="cloud-container">
+  <div id="cloud-intro">
   <Navbar />
 
-  <div class="main-container background-main">
+  
+  <div class="main-container">
 
     <!-- Connect Wallet modal -->
     <div class="modal fade" id="connectModal" tabindex="-1" aria-labelledby="connectModalLabel" aria-hidden="true">
@@ -87,6 +90,8 @@
 
     <Footer />
   </div>
+  </div>
+</div>
   
 </template>
 

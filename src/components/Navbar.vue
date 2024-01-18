@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <router-link to="/" class="navbar-brand">
         <img src="../assets/logo.png" alt="logo" class="d-inline-block align-text-bottom" height="40" />
-        Scrolly Domains
+        Scrolly Name Service
       </router-link>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -135,7 +135,18 @@ export default {
 </script>
 
 <style scoped>
+.btn-primary, .btn-primary:active, .btn-primary:focus, .btn-primary:disabled {
+  background: transparent;
+  box-shadow: none;
+  color: #fff;
+  border: 2px solid white;
+}
 
+.btn-primary:hover {
+  color: #155BFC;
+  background: #fff;
+  border: 2px solid #fff;
+}
 
 @media only screen and (max-width: 767px) {
   

@@ -62,7 +62,7 @@ export default {
 
   data() {
     return {
-      flipSide: "back", // front-custom, back-punk
+      flipSide: "front", // front-custom, back-punk
     }
   },
 
@@ -117,14 +117,14 @@ export default {
 .btn-sidebar, .btn-sidebar:focus {
   padding: 10px;
   width: 100%;
-  color: #fff;
+  color: #000;
   text-decoration: none;
   box-shadow: none;
 }
 
 .btn-sidebar:hover {
-  color: #fff;
-  border-color: #fff;
+  color: #000;
+  border-color: #000;
   border-radius: 10px;
 }
 
