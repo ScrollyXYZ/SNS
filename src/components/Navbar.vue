@@ -67,7 +67,7 @@
 
             <a 
               class="btn btn-primary me-3 navbar-menu-btn" 
-              href="https://element.market/assets/scroll/0xc2c543d39426bfd1db66bbde2dd9e4a5c7212876" 
+              href="https://element.market/collections/scrolly-f07594?search%5Btoggles%5D[0]=BUY_NOW" 
               target="_blank"
             >Marketplace</a>
 

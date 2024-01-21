@@ -18,7 +18,7 @@
 
     <a class="icons" target="_blank" href="https://twitter.com/scrollyxyz"><i class="bi bi-twitter"></i></a>
 
-    <a class="icons" target="_blank" href="https://github.com/"><i class="bi bi-github"></i></a>
+    <a class="icons" target="_blank" href="https://github.com/ScrollyXYZ/SNS"><i class="bi bi-github"></i></a>
 
     <a class="icons" target="_blank" href="https://t.me/ScrollyTheMap"><i class="bi bi-telegram"></i></a>
     
