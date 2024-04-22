@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'GlitterySnowfall';
-  src: url('/assets/font/GlitterySnowfall.ttf')  format('truetype');
+  font-family: "GlitterySnowfall";
+  src: url("/assets/font/GlitterySnowfall.ttf") format("truetype");
 }
 
 .cloud-container {
@@ -10,13 +10,23 @@
   background-color: #007ced;
   background: linear-gradient(to bottom, #007ced 1%, #cce7ff 100%);
 }
-
+.img-fluid.main-img.rounded {
+  width: 25%; /* Assurez-vous que l'image est réglée pour occuper toute la largeur disponible */
+  max-width: none; /* Annule la propriété max-width si elle est limitée par Bootstrap ou d'autres CSS */
+  height: auto; /* Garde le rapport hauteur/largeur de l'image */
+}
 @keyframes wind {
   0% {
-    background-position: 0 200px, 0 300px, 100px 250px;
+    background-position:
+      0 200px,
+      0 300px,
+      100px 250px;
   }
   100% {
-    background-position: 1000px 200px, 1200px 300px, 1100px 250px;
+    background-position:
+      1000px 200px,
+      1200px 300px,
+      1100px 250px;
   }
 }
 
@@ -25,174 +35,152 @@
   height: 100%;
   width: 100%;
   background: url(/assets/clouds/clouds1000.png);
-  background: url(/assets/clouds/clouds1000.png) 0 200px, url(/assets/clouds/clouds1200_1.png) 0 300px, url(/assets/clouds/clouds1000_blur3.png) 100px 250px;
   animation: wind 20s linear infinite;
 }
 
 .nav-link {
   position: relative;
-  display: inline-block; 
+  display: inline-block;
+  transition: color 0.3s;
 }
 
 a {
   color: #000;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease-in-out;
 }
 
 a:hover {
   color: #1d1c1c;
+  text-decoration: underline;
 }
 
 body {
-  font-family: 'GlitterySnowfall', sans-serif;
-  /*
-  background: linear-gradient(30deg, #155BFC 30%, #155BFC 100%);
-  */
+  font-family: "GlitterySnowfall", sans-serif;
   color: #000;
 }
 
-.btn-primary, .btn-primary:active, .btn-primary:focus, .btn-primary:disabled {
+.btn-primary,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:disabled {
   background: transparent;
   box-shadow: none;
   color: #000;
   border: 2px solid black;
+  border-radius: 8px;
 }
 
 .btn-primary:hover {
-  color: #155BFC;
+  color: #155bfc;
   background: #fff;
   border: 2px solid #fff;
 }
 
-.btn-secondary, .btn-secondary:active, .btn-secondary:focus, .btn-secondary:disabled {
+.btn-secondary,
+.btn-secondary:active,
+.btn-secondary:focus,
+.btn-secondary:disabled {
   background: white;
   border-color: black;
   box-shadow: none;
   color: black;
   border: 2px solid black;
+  border-radius: 8px;
 }
 
 .btn-secondary:hover {
   color: black;
   border-color: #ffffff;
   background: #ffffff;
-  border: 2px solid black;
-}
-
-.card-img-wallet:hover {
-  opacity: 0.5;
-}
-
-.card-img-wallet:active {
-  transform: scale(0.8);
 }
 
 .container {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.8); /* Lightly opaque white background */
   padding: 20px;
   border-radius: 10px;
   border: 2px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.cursor-pointer {
-  cursor: pointer;
+.modal-content,
+.card {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Slightly more opaque white for modals and cards */
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #eee;
 }
 
-div {
+.table {
+  width: 100%;
+  border-collapse: collapse; /* Removes space between cells */
+  font-family: "GlitterySnowfall", sans-serif;
+}
+
+.table th,
+.table td {
+  text-align: center;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Slightly opaque white background for cells */
+  padding: 10px;
+  border-radius: 0px; /* Removing rounded borders for a cleaner look */
+  transition: transform 0.3s ease;
+}
+
+.table th {
+  background-color: #007ced; /* Consistent blue for header cells */
+  color: hsl(0, 0%, 100%);
   font-size: 20px;
 }
 
-.dropdown-item {
+.table tr {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Apply hover effect to the entire row */
+}
+
+.table tr:hover {
+  transform: scale(1.02); /* Zoom effect on hover */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
   cursor: pointer;
 }
 
-hr {
-  background-color: #000;
+.table tr:nth-child(odd) {
+  background-color: rgba(204, 229, 255, 0.9); /* Light blue for odd rows */
 }
 
-.img-thumbnail {
-  background-color: transparent;
+.table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.9); /* White for even rows */
 }
 
-.modal-content {
-  color: black;
+.table a:hover {
+  color: #000; /* Keep link color on hover */
+}
+/* Sélecteur spécifique pour le tableur avec la classe 'table-hover' */
+.table-hover th,
+.table-hover td,
+.table-hover span {
+  color: #000; /* Assure que la couleur de texte est noire */
 }
 
-.navbar-brand {
-  font-family: 'GlitterySnowfall', sans-serif;
-  font-size: 2.2rem;
+.table-hover th:hover,
+.table-hover td:hover,
+.table-hover span:hover {
+  color: #000; /* Maintient la couleur de texte noire même lors du survol */
 }
-
-.navbar-dark .navbar-brand {
-  /*color: #fff;*/
-}
-
-.navbar-dark {
-  border-radius: 0px 0px 10px 10px;
-  /*background: linear-gradient(30deg, #C71585 30%, #c111c3 100%);*/
-  background: transparent;
-  padding: 20px;
-  
-}
-.navbar-img {
-  margin-right: 5px;
-}
-
-p {
-  font-size: 24px;
-}
-
-.punchline-domain, code {
-  color: #b35160;
-}
-
-.span-link:hover {
-  color: #161414;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.span-link {
-  text-decoration: underline;
-}
-
-.table > tbody > tr > td {
-  color: black;
-  background-color: transparent;
-}
-
-.Vue-Toastification__toast--info {
-  background-color: #405374;
-}
-
-.Vue-Toastification__toast--success {
-  background-color: #00C9D1;
-}
-
+.Vue-Toastification__toast--info,
+.Vue-Toastification__toast--success,
 .Vue-Toastification__toast--error {
-  background-color: #e26670;
-}
-
-.wallet-img-wrapper {
-  border-width: 2px;
-  border-color: #ffffff;
-  border-style: solid;
-}
-
-@media only screen and (max-width: 767px) {
-  .navbar-menu-btn {
-    margin-bottom: 5px;
-  }
-
-  .navbar-other-item {
-    margin-top: 10px;
-  }
-
-  .navbar-menu-buttons {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #sidebar-container {
-    margin-bottom: 15px;
-  }
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
