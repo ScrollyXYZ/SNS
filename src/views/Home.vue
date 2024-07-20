@@ -6,9 +6,23 @@
       <h1>Mint your {{ getTldName }} web3 name!</h1>
       <p>
         A digital identity for Scrolly The Map web3 community. <br />
-        And start chatting with other comunity members on
+        And start chatting with other community members on
         <a href="https://hub.scrolly.xyz" target="_blank">Scrolly Hub</a>!
       </p>
+    </div>
+
+    <div class="highlight-box mt-5 mb-5 p-3">
+      <h2>Participate in Quests and Evolve Your Badge!</h2>
+      <p>
+        Visit the main site to take part in quests and upgrade your badge. Don't
+        miss out on the fun and rewards!
+      </p>
+      <a
+        href="https://hub.scrolly.xyz/quest"
+        target="_blank"
+        class="btn btn-warning btn-lg"
+        >Go to Quest Dashboard</a
+      >
     </div>
 
     <div class="d-flex justify-content-center domain-input-container mb-3 mt-5">
@@ -20,7 +34,6 @@
           class="form-control text-end border-2 border-end-0 border-light domain-input"
           aria-label="Text input with dropdown button"
         />
-
         <span
           class="input-group-text tld-addon border-2 border-light input-span-extension"
         >
@@ -167,10 +180,10 @@
       "
       class="mt-1"
     >
-      <small
-        ><strong>Important:</strong> You will need to complete 2 transactions:
-        Approve {{ getPaymentTokenName }} + Buy Domain.</small
-      >
+      <small>
+        <strong>Important:</strong> You will need to complete 2 transactions:
+        Approve {{ getPaymentTokenName }} + Buy Domain.
+      </small>
     </p>
 
     <!-- Connect Wallet -->
@@ -728,6 +741,13 @@ tr:last-of-type td:last-of-type {
 .tld-addon {
   background-color: white;
   color: #0d0f1a;
+}
+
+.highlight-box {
+  border: 2px solid #ffd700;
+  background-color: #fffbea;
+  color: #333;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 767px) {
