@@ -39,13 +39,13 @@
 
             <a
               class="btn btn-primary me-3 navbar-menu-btn"
-              href="https://scrolly.xyz"
+              href="https://scrollyfi.xyz"
               target="_blank"
               >Main site</a
             >
             <a
               class="btn btn-primary me-3 navbar-menu-btn"
-              href="https://hub.scrolly.xyz"
+              href="https://scrollyfi.xyz"
               target="_blank"
               >Scrolly Hub</a
             >

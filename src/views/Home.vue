@@ -7,7 +7,7 @@
       <p>
         A digital identity for Scrolly The Map web3 community. <br />
         And start chatting with other community members on
-        <a href="https://hub.scrolly.xyz" target="_blank">Scrolly Hub</a>!
+        <a href="https://scrollyfi.xyz" target="_blank">Scrolly Hub</a>!
       </p>
     </div>
 
@@ -18,7 +18,7 @@
         miss out on the fun and rewards!
       </p>
       <a
-        href="https://hub.scrolly.xyz/quest"
+        href="https://scrollyfi.xyz/dashboard"
         target="_blank"
         class="btn btn-warning btn-lg"
         >Go to Quest Dashboard</a
@@ -466,15 +466,15 @@ export default {
         const contract = new ethers.Contract(
           this.getPaymentTokenAddress,
           intfc,
-          this.signer,
+          this.signer
         );
 
         const tx = await contract.approve(
           this.getMinterAddress, // spender (minting contract)
           ethers.utils.parseUnits(
             String(this.chosenAllowance),
-            this.getPaymentTokenDecimals,
-          ), // amount
+            this.getPaymentTokenDecimals
+          ) // amount
         );
         const toastWait = this.toast(
           {
@@ -489,7 +489,7 @@ export default {
               window
                 .open(this.getBlockExplorerBaseUrl + "/tx/" + tx.hash, "_blank")
                 .focus(),
-          },
+          }
         );
 
         document.getElementById("closeApproveTokenModal").click(); // close the modal
@@ -505,10 +505,10 @@ export default {
                 window
                   .open(
                     this.getBlockExplorerBaseUrl + "/tx/" + tx.hash,
-                    "_blank",
+                    "_blank"
                   )
                   .focus(),
-            },
+            }
           );
           this.setPaymentTokenAllowance(this.chosenAllowance);
           this.waiting = false;
@@ -538,7 +538,7 @@ export default {
 
       // check if domain already minted
       const existingHolder = await this.getTldContract.getDomainHolder(
-        this.domainLowerCase,
+        this.domainLowerCase
       );
 
       if (existingHolder !== ethers.constants.AddressZero) {
@@ -554,7 +554,7 @@ export default {
       const minterContractSigner = new ethers.Contract(
         this.getMinterAddress,
         wrapperIntfc,
-        this.signer,
+        this.signer
       );
 
       try {
@@ -567,7 +567,7 @@ export default {
         const tx = await minterContractSigner.mint(
           this.domainLowerCase,
           this.address,
-          referral,
+          referral
         );
 
         const toastWait = this.toast(
@@ -583,7 +583,7 @@ export default {
               window
                 .open(this.getBlockExplorerBaseUrl + "/tx/" + tx.hash, "_blank")
                 .focus(),
-          },
+          }
         );
 
         const receipt = await tx.wait();

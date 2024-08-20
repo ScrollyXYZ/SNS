@@ -11,7 +11,7 @@
     <span v-if="isUserMinterAdmin || isUserRoyaltyFeeUpdater || isUserTldAdmin"> | </span>
 
     Powered by <a target="_blank" href="https://punk.domains">Punk Domains</a> 
-    for <a target="_blank" href="https://scrolly.xyz">Scrolly The Map</a>
+    for <a target="_blank" href="https://scrollyfi.xyz">Scrolly The Map</a>
   </div>
 
   <div class="container-fluid text-center">
